@@ -15,7 +15,6 @@ This repo provides the official implementation of **TanGO**, a **training-free**
 - [x] Inference & editing code
 - [x] Example assets (`./examples`)
 - [ ] TanGOEdit benchmark (100 curated samples)
-- [ ] Project page & arXiv technical report
 - [ ] Texture baking pipeline
 
 ## ⚙️ Installation
