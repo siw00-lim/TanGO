@@ -89,8 +89,6 @@ Please refer to the supplementary material for the full prompt template and deta
 
 ## Notes
 
-- If you have questions or find bugs, feel free to open an issue or email the first author (<EMAIL>).
-- If you encounter `EGL: cannot open shared object file: No such file or directory` error during rendering mesh, try to install following packages: `sudo apt-get install libegl1-mesa libgl1-mesa-glx`.
 
 ## Acknowledgements
 
