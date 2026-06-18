@@ -99,10 +99,10 @@ Our repo is built on top of several awesome projects and works, including [FlowE
 If you find TanGO useful for your research and applications, please cite us using this BibTex:
 
 ```bibtex
-@inproceedings{tango2026,
-  title={TanGO: Training-Free 3D Editing via Tangent-space Guidance and Optimization},
-  author={<AUTHORS>},
-  booktitle={European Conference on Computer Vision (ECCV)},
-  year={2026},
+@inproceedings{,
+  title= ,
+  author=,
+  booktitle=,
+  year=,
 }
 ```
