@@ -7,16 +7,6 @@ This repo provides the official implementation of **TanGO**, a **training-free**
 
 ![teaser](./assets/teaser.png)
 
-At each ODE step we form the source/target velocity difference and modulate it with a per-token gain derived from a von Mises–Fisher directional discrepancy:
-
-```
-Δv_i      = v_tar,i − v_src,i                  # raw velocity difference  (Eq. 2)
-cos θ_i   = ⟨v̂_tar,i , v̂_src,i⟩                # directional agreement     (Eq. 7)
-d_i       = 1 − cos θ_i                         # token-wise demand         (Eq. 10)
-λ_eff(t)  = λ · ( c / mean_i d_i )              # mean-gain normalization   (Eq. 12)
-u_i(t)    = λ_eff(t) · d_i · Δv_i               # per-token control input   (Eq. 13)
-```
-
 The entire method lives in [`src/tango.py`](src/tango.py) — see `TanGOEdit._tango_control`.
 
 ## Installation
