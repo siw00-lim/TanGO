@@ -4,7 +4,7 @@
 <sup>1</sup> Korea Advanced Institute of Science and Technology (KAIST) &nbsp;·&nbsp; <sup>2</sup> Chung-Ang University
 
 <a href='<PROJECT_PAGE_URL>'><img src='https://img.shields.io/badge/Project-Page-green'></a>
-<a href='<ARXIV_URL>'><img src='https://img.shields.io/badge/Technique-Report-red'></a>
+<a href='<ARXIV_URL>'><img src='https://img.shields.io/badge/Technique-Report-b31b1b?logo=arxiv&logoColor=white'></a>
 
 This repo provides the official implementation of **TanGO**, a **training-free** framework for 3D editing on VecSet-based flow models. Instead of applying a single global update, TanGO performs **adaptive per-token steering in the tangent space** of the generative dynamics: it amplifies guidance for tokens in regions to be edited while attenuating it for tokens to be preserved, enabling **mask-free**, localized, identity-preserving edits.
 
