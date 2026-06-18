@@ -1,5 +1,5 @@
 # TanGO: Training-Free 3D Editing via Tangent-space Guidance and Optimization
-[Siwoo Lim](https://siw00-lim.github.io/)<sup>1</sup> · [Sunjae Yoon](https://dbstjswo505.github.io/)<sup>2</sup> · [Gwanhyeong Koo](https://kookie12.github.io/)<sup>1</sup> · [Chang D. Yoo](https://sanctusfactory.com/family.php)<sup>1</sup>
+[Siwoo Lim](https://siw00-lim.github.io/)<sup>1</sup> · [Sunjae Yoon](https://dbstjswo505.github.io/)<sup>2</sup> · [Gwanhyeong Koo](https://kookie12.github.io/)<sup>1</sup> · [Hyeonseo Yun](https://github.com/franktome)<sup>1</sup> · [Chang D. Yoo](https://sanctusfactory.com/family.php)<sup>1</sup>
 
 <a href='<PROJECT_PAGE_URL>'><img src='https://img.shields.io/badge/Project-Page-green'></a>
 <a href='<ARXIV_URL>'><img src='https://img.shields.io/badge/Technique-Report-red'></a>
