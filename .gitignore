@@ -1,0 +1,26 @@
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# outputs / artifacts
+outputs/
+*.ply
+*.mp4
+
+# generated edit results (keep the input src.glb / src.png / edited.png)
+examples/**/tango*.glb
+
+# preprocessed (auto-regenerated) background-removed images
+examples/**/*_rm_bg.png
+
+# weights / caches
+*.ckpt
+*.safetensors
+.cache/
+
+# os / editor
+.DS_Store
+.vscode/
+.idea/
