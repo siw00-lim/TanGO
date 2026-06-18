@@ -62,9 +62,11 @@ python3 src/tango.py \
 
 ## Prepare Editing Data
 
-Given a `source shape` and `editing prompt`, we first construct the editing conditions, including the `source image` and `target image`. Then, we organize the inputs and perform 3D editing.
+### Quick start (a simple recipe for a single edit)
 
-* Step1: Rendering the `source image` from the `source shape`.
+Given a `source shape` and an `editing prompt`, we first construct the editing conditions — a `source image` and a `target image` — then organize the inputs and run 3D editing.
+
+* Step1: Render the `source image` from the `source shape`.
   Use the **Render Multiview Images** script in [TRELLIS](https://github.com/microsoft/TRELLIS/blob/main/DATASET.md). Then select one suitable rendering as the `source image`.
 * Step2: Construct the `target image` using a 2D editing model: Apply a 2D editing model (e.g., [Nano Banana](https://aistudio.google.com/models/gemini-2-5-flash-image)) to edit the `source image` according to the given `editing prompt`, producing the `target image`.
 * Step3: Organize the inputs and perform 3D editing. Place all required inputs in a folder and run the 3D editing pipeline. The process requires the following files:
@@ -73,6 +75,16 @@ Given a `source shape` and `editing prompt`, we first construct the editing cond
   * `edited.png`: the `target image`
 
 You can find example setups in `./examples`.
+
+### TanGOEdit benchmark
+
+The quick-start recipe above is meant for trying out a single edit. The actual evaluation benchmark used in the paper, **TanGOEdit**, is built with the multi-stage, VLM-assisted pipeline detailed in the supplementary material (Sec. C). It contains **100 curated editing instances** roughly balanced across **five edit categories** — *Add, Replace, Action Change, Style Change, Remove* — and is constructed as follows:
+
+* **Step1 — Source asset collection.** Collect diverse 3D assets with clear object identity and visually interpretable geometry; inspect rendered views and keep assets whose main structure and editable regions are clearly visible.
+* **Step2 — Editing instruction construction.** For each asset, prompt a vision-language model ([Qwen-VL-2.5](https://github.com/QwenLM/Qwen2.5-VL), following [Nano3D](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1)'s instruction strategy) to assign one of the five categories and generate a single, specific, identity-preserving, and visually grounded editing instruction.
+* **Step3 — Quality control and selection.** Remove or rewrite ambiguous, unverifiable, or overly destructive instructions, then select 100 high-quality samples with a roughly balanced category distribution.
+
+Please refer to the supplementary material for the full prompt template and details.
 
 ## Notes
 
