@@ -7,8 +7,6 @@ This repo provides the official implementation of **TanGO**, a **training-free**
 
 ![teaser](./assets/teaser.png)
 
-The entire method lives in [`src/tango.py`](src/tango.py) — see `TanGOEdit._tango_control`.
-
 ## Installation
 
 TanGO builds upon [Hunyuan3D 2.1](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1), which serves as the base flow model. We recommend using CUDA 12.4 (as suggested in the official Hunyuan3D instructions) or CUDA 12.1.
