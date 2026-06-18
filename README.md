@@ -10,7 +10,15 @@ This repo provides the official implementation of **TanGO**, a **training-free**
 
 ![teaser](./assets/teaser.png)
 
-## Installation
+## 🔥 Release
+
+- [x] Inference & editing code
+- [x] Example assets (`./examples`)
+- [ ] TanGOEdit benchmark (100 curated samples)
+- [ ] Project page & arXiv technical report
+- [ ] Texture baking pipeline
+
+## ⚙️ Installation
 
 TanGO builds upon [Hunyuan3D 2.1](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1), which serves as the base flow model. We recommend using CUDA 12.4 (as suggested in the official Hunyuan3D instructions) or CUDA 12.1.
 
@@ -42,7 +50,7 @@ pip install torch-cluster -f https://data.pyg.org/whl/torch-2.4.0+cu121.html
 
 The Hunyuan3D-2.1 weights are downloaded automatically from the Hugging Face Hub on first run (`tencent/Hunyuan3D-2.1`).
 
-## Usage
+## 🚀 Usage
 
 Run TanGO with default settings (paper defaults λ=5.0, c=0.2, n_max=41). More examples can be found in `./examples`.
 
@@ -61,7 +69,7 @@ python3 src/tango.py \
   --lam 5.0 --c 0.2 --n_max 41
 ```
 
-## Prepare Editing Data
+## 🗂️ Prepare Editing Data
 
 ### Quick start (a simple recipe for a single edit)
 
@@ -87,14 +95,14 @@ The quick-start recipe above is meant for trying out a single edit. The actual e
 
 Please refer to the supplementary material for the full prompt template and details.
 
-## Notes
+## 📝 Notes
 
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 Our repo is built on top of several awesome projects and works, including [FlowEdit](https://github.com/fallenshock/FlowEdit), [Hunyuan3D 2.1](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1) and [AnchorFlow](https://github.com/ZhenglinZhou/AnchorFlow).
 
-## Cite
+## 📖 Cite
 
 If you find TanGO useful for your research and applications, please cite us using this BibTex:
 
