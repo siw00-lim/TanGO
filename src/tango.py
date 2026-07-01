@@ -1,17 +1,4 @@
-"""TanGO: Training-Free 3D Editing via Tangent-space Guidance and Optimization.
 
-Clean, self-contained implementation of the published TanGO method.
-The control law used by the paper is kept here:
-
-    u_i(t) = lambda_eff(t) * g_i(t) * dv_i(t)           (Eq. 13)
-        dv_i      = v_tar,i - v_src,i                    (Eq. 2)   raw velocity diff
-        d_i       = 1 - cos(theta_i)                     (Eq. 10)  directional demand
-        g_i       = d_i / rho   (rho absorbed into lambda)
-        lambda_eff= lambda * (c / mean_i d_i)            (Eq. 12)  mean-gain norm.
-
-Default hyper-parameters follow the paper: T=50 steps, n_max=41, n_min=1,
-s_src=3.5, s_tar=7.5, lambda=5.0, c=0.2.
-"""
 import os
 import sys
 from pathlib import Path
