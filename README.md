@@ -3,8 +3,8 @@
 
 <sup>1</sup> Korea Advanced Institute of Science and Technology (KAIST) &nbsp;·&nbsp; <sup>2</sup> Chung-Ang University
 
-<a href='<PROJECT_PAGE_URL>'><img src='https://img.shields.io/badge/Project-Page-green'></a>
-<a href='<ARXIV_URL>'><img src='https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white'></a>
+<a href='<https://siw00-lim.github.io/TanGO-Project-Page/>'><img src='https://img.shields.io/badge/Project-Page-green'></a>
+<a href='<https://arxiv.org/abs/2607.14927>'><img src='https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white'></a>
 
 This repo provides the official implementation of **TanGO**, a **training-free** framework for 3D editing on VecSet-based flow models. Instead of applying a single global update, TanGO performs **adaptive per-token steering in the tangent space** of the generative dynamics: it amplifies guidance for tokens in regions to be edited while attenuating it for tokens to be preserved, enabling **mask-free**, localized, identity-preserving edits.
 
@@ -106,10 +106,13 @@ Our repo is built on top of several awesome projects and works, including [FlowE
 If you find TanGO useful for your research and applications, please cite us using this BibTex:
 
 ```bibtex
-@inproceedings{,
-  title= ,
-  author=,
-  booktitle=,
-  year=,
+@misc{lim2026tangotrainingfree3dediting,
+      title={TanGO: Training-Free 3D Editing via Tangent-Space Guidance and Optimization}, 
+      author={Siwoo Lim and Sunjae Yoon and Gwanhyeong Koo and Hyeonseo Yun and Chang D. Yoo},
+      year={2026},
+      eprint={2607.14927},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2607.14927}, 
 }
 ```
